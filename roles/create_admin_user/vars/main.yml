@@ -1,0 +1,11 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for create_admin_user
+admin:
+#  - name: 'ansible_user'
+#    comment: 'Utimate User'
+#    uid: '1002'
+
+  - name: 'semaphore'
+    comment: 'Semaphore App User'
+    uid: '1003'
