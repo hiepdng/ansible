@@ -1,0 +1,11 @@
+--- 
+- name: System minitor 
+  hosts: all  
+  tasks: 
+    - name: df 
+      ansible.builtin.command: df  
+      register: local_disk_space 
+ 
+    - name: Print disk space output 
+      ansible.builtin.debug: 
+        var: local_disk_space.stdout_lines
