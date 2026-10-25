@@ -3,7 +3,7 @@
   hosts: all 
   tasks: 
     - name: df 
-      ansible.builtin.command: df  
+      ansible.builtin.command: df -hT
       register: local_disk_space 
  
     - name: Print disk space output 
