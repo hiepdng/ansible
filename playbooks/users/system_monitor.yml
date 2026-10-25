@@ -1,6 +1,6 @@
 --- 
 - name: System minitor 
-  hosts: localhost  
+  hosts: all 
   tasks: 
     - name: df 
       ansible.builtin.command: df  
